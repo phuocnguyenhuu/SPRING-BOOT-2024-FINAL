@@ -53,6 +53,8 @@ public class CruddemoApplication {
 		// display id of the saved student
 		System.out.println("Saved student. Generated id: " + tempStudent.getId());
 	}
+
+
 }
 
 
