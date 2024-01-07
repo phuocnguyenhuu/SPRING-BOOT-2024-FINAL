@@ -30,7 +30,7 @@ public class CruddemoApplication {
 
 		// create  a student object
 		System.out.println("Creating new student object ...");
-		Student tempStudent = new Student("Daffy", "Duck", "daffy@luv2code.com");
+		Student tempStudent = new Student("Andy", "Nguyen", "andynguyen@gmail.com");
 
 		// save the student
 		System.out.println("Saving the student ...");
