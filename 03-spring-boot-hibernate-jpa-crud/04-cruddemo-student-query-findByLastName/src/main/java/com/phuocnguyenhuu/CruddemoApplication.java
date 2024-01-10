@@ -36,12 +36,24 @@ public class CruddemoApplication {
 	private void queryForStudentsByLastName(StudentDAO studentDAO) {
 
 		// get a list of students
-		List<Student> theStudents = studentDAO.findByLastName("Doe");
 
-		// display list of students
-		for (Student tempStudent : theStudents) {
-			System.out.println(tempStudent);
+		List<Student> theStudent1 = studentDAO.findByLastName("Andy");
+		if (theStudent1.size() >0){
+			for(Student tmp :theStudent1){
+				System.out.println(tmp);
+			}
+		} else {
+			System.out.println("Not found");
 		}
+
+
+//		// get a list of students
+//		List<Student> theStudents = studentDAO.findByLastName("Doe");
+//
+//		// display list of students
+//		for (Student tempStudent : theStudents) {
+//			System.out.println(tempStudent);
+//		}
 	}
 
 	private void queryForStudents(StudentDAO studentDAO) {
