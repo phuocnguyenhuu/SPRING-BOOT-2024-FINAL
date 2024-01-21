@@ -18,12 +18,13 @@ public class StudentRestController {
 	
 	// define @PostConstruct to load the student data ... only once!
 	@PostConstruct
-	public void loadData() {
+	public void loadData(){
 		theStudents = new ArrayList<>();
-		theStudents.add(new Student("Phuoc", "Nguyen1"));
-		theStudents.add(new Student("Andy", "Nguyen2"));
-		theStudents.add(new Student("Samson", "Nguyen3"));
-		
+
+		theStudents.add(new Student("Phuoc", "Nguyen"));
+		theStudents.add(new Student("Andy", "No Hana"));
+		theStudents.add(new Student("Xuhi", "Gau Gau"));
+
 	}
 	
 	// define endpoint for "/students" - return a list of students
